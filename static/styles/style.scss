@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+}
+
+@mixin centre($axis: "both"){
+	position:absolute;
+	@if $axis == "y"{
+		top:50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+	}
+	@if $axis == "x"{
+		left:50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+	}
+	@if $axis == "both"{
+		top:25%;
+		left:50%;
+		-webkit-transform: translate(-50%, -25%);
+        -moz-transform: translate(-50%, -25%);
+        -ms-transform: translate(-50%, -25%);
+        -o-transform: translate(-50%, -25%);
+        transform: translate(-50%, -25%);
+	}	
+}
+
+#name{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#banner{
+    @include centre;
+}
+
+#stuff{
+    display: flex;
+    justify-content: center;
+    @include centre("x");
+    width: 100%;
+}
+
+#email{
+    margin-right: 2.5vmax;
+    margin-left: 2.5vmax;
+}
+
+i.fab.fa-github-square{
+    color: white;
+}
+
+i.fas.fa-envelope{
+    color: white;
+}
+
+i.fab.fa-linkedin{
+    color:white;
+}
+body {
+  background: #222222;
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vmax;
+  box-shadow: inset 0 0 400px #111111;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+

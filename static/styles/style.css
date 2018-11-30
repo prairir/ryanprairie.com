@@ -1,0 +1,52 @@
+html {
+  height: 100%; }
+
+#name {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+#banner {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25%);
+  -moz-transform: translate(-50%, -25%);
+  -ms-transform: translate(-50%, -25%);
+  -o-transform: translate(-50%, -25%);
+  transform: translate(-50%, -25%); }
+
+#stuff {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%; }
+
+#email {
+  margin-right: 2.5vmax;
+  margin-left: 2.5vmax; }
+
+i.fab.fa-github-square {
+  color: white; }
+
+i.fas.fa-envelope {
+  color: white; }
+
+i.fab.fa-linkedin {
+  color: white; }
+
+body {
+  background: #222222;
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vmax;
+  box-shadow: inset 0 0 400px #111111;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+/*# sourceMappingURL=style.css.map */
