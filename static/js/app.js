@@ -7,7 +7,6 @@ var w = window,
 
 particlesJS.load('particles-js','../static/js/particles.json', console.log('sup'));
 
-var canvas = document.getElementsByClassName('particles-js-canvas-el')[0];
-canvas.setAttribute('width', x);
-canvas.setAttribute('height', y);
-
+var ctx = document.getElementsByTagName('canvas')[0];
+ctx.width = x;
+ctx.height =y;
