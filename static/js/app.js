@@ -9,4 +9,4 @@ var canvas = document.getElementsByClassName('particles-js-canvas-el')[0];
 canvas.setAttribute('width', x);
 canvas.setAttribute('height', y);
 
-particlesJS.load('particles-js','../static/js/particles.json', console.log('sup'));
+particlesJS.load('particles-js','../static/js/particles.json', console.log('hi there'));
