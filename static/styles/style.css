@@ -3,12 +3,41 @@ html {
     overflow: hidden;
 }
 
+#beans{
+    display: flex;
+    justify-content: center
+}
+
+#beans img {
+    width: 25%;
+    border-radius: 100%;
+    border: 2px solid rgba(125, 137, 162, .75)
+}
+
 #name {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
     margin: auto;
     text-align: center;
     display: flex;
+}
+
+#name p {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#description {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+    display: flex;
+    justify-content: center;
+    font-size: 2.40vmax;
+}
+
+#description p {
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 #banner {
@@ -46,13 +75,20 @@ html {
 
 canvas{
     display: block;
-    vertical-align: bottom
 }
-#email {
-    margin-right: 2.5vmax;
+
+#resume {
+    margin-right: 1.25vmax;
     margin-left: 2.5vmax;
 }
 
+#email {
+    margin-right: 2.5vmax;
+    margin-left: 1.25vmax;
+}
+
+
+i.far.fa-file-alt,
 i.fab.fa-linkedin,
 i.fab.fa-github-square, 
 i.fas.fa-envelope {
