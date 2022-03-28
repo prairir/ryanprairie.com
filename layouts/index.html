@@ -1,0 +1,57 @@
+{{ "<!-- ENTERING index.html -->" | safeHTML }}
+<html>
+    <head>
+        <title>{{ .Title }}</title>
+        <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="{{ .Site.BaseURL }}js/app.js"></script>
+
+        <meta property="og:site_name" content="Ryan Prairies Website">
+        <meta property="og:image" content="{{ .Site.BaseURL }}extras/headshot.jpg">
+        <meta property="og:type" content="website">
+
+        <meta charset="UFT-8" />
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet" />
+        <meta content="width=device-width" name="viewport" />
+        <link href="{{ .Site.BaseURL }}styles/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div id="banner">
+            <div id="beans">
+                <img src="{{ .Site.BaseURL }}extras/headshot.jpg" alt="photo of me looking super duper cool">
+            </div>
+            <div id="name">
+                <p>Ryan Prairie</p>
+            </div>
+            <div id="description">
+                <p>Occasionally, I use computers</p>
+            </div>
+            <div id="stuff">
+                <a href="https://github.com/prairir" id="github">
+                    <i class="fab fa-github-square">
+                    </i>
+                </a>
+                <a href="https://linkedin.com/in/ryanprairie" id="linkedin">
+                    <i class="fab fa-linkedin">
+                    </i>
+                </a>
+                <a href="mailto:prairie421@gmail.com" id="email">
+                    <i class="fas fa-envelope">
+                    </i>
+                </a>
+    							<a href="{{ .Site.BaseURL }}posts/" id="blog">
+    									<i class="fas fa-typewriter">
+    									</i>
+    							</a>
+                <a href="static/extras/resume.pdf" id="resume">
+                    <i class="far fa-file-alt" >
+    									</i>
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+{{ "<!-- LEAVING index.html -->" | safeHTML }}
