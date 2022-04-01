@@ -1,0 +1,132 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+#beans {
+  display: flex;
+  justify-content: center;
+}
+
+#beans a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#beans a img {
+  width: 25%;
+  height: 25%;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+
+  border: 2px solid rgba(125, 137, 162, 0.75);
+
+  // animation transition
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+
+  // animation final position
+  &:hover {
+    position: relative;
+    -webkit-transform: translateY(-0.75rem);
+    -moz-transform: translateY(-0.75rem);
+    -ms-transform: translateY(-0.75rem);
+    -o-transform: translateY(-0.75rem);
+    transform: translateY(-0.75rem);
+  }
+}
+
+#name {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin: auto;
+  text-align: center;
+  display: flex;
+}
+
+#name p {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+#description {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: flex;
+  justify-content: center;
+  font-size: 2.4vmax;
+}
+
+#description p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+#banner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 25%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translateX(-50%, -25%);
+  -moz-transform: translateX(-50%, -25%);
+  -ms-transform: translateX(-50%, -25%);
+  -o-transform: translateX(-50%, -25%);
+  transform: translate(-50%, -25%);
+}
+
+#stuff {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#particles-js {
+  background-color: #1e2e4a;
+  background-size: cover;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+}
+
+canvas {
+  display: block;
+}
+
+#resume {
+  margin-right: 1.25vmax;
+  margin-left: 2.5vmax;
+}
+
+#email {
+  margin-right: 2.5vmax;
+  margin-left: 1.25vmax;
+}
+
+i.far.fa-file-alt,
+i.fab.fa-linkedin,
+i.fab.fa-github-square,
+i.fas.fa-envelope {
+  color: white;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 6vmax;
+  background-color: #1e2e4a;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
