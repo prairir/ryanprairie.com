@@ -40,7 +40,7 @@ html {
 
 #name p {
   margin-top: 5px;
-  margin-bottom: 25px; }
+  margin-bottom: 10px; }
 
 #description {
   color: white;
@@ -57,7 +57,7 @@ html {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 25%;
+  top: 30%;
   left: 50%;
   width: 80%;
   -webkit-transform: translateX(-50%, -25%);
@@ -86,7 +86,7 @@ html {
 canvas {
   display: block; }
 
-#resume {
+#linkedin {
   margin-right: 1.25vmax;
   margin-left: 2.5vmax; }
 
