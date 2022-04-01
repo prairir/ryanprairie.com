@@ -6,11 +6,22 @@ languageCode = "en-us"
 title = "Ryan Prairie"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+theme = "FixIt"
 
 [params]
   # LoveIt theme version
   version = "0.2.X"
+
+  defaultTheme = "dark"
+
+  # home page
+  [params.home]
+    [params.home.profile]
+      enable = true
+
+      title = "About Me"
+
+      avatarUrl = "/extras/headshot.jpg"
 
 [menu]
   [[menu.main]]
