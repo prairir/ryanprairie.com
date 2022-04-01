@@ -3,6 +3,7 @@ title: "About Me"
 type: "about"
 layout: "index"
 date: 2022-03-30T20:25:39-04:00
+LinkURL: "../"
 ---
 
 Hey 👋
