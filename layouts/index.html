@@ -1,5 +1,6 @@
 {{ $sass := resources.Get "sass/style.scss" }}
-{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+{{ $template := resources.Get "sass/style.scss" }}
+{{ $style := $template | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS | resources.Fingerprint }}
 {{ "<!-- ENTERING index.html -->" | safeHTML }}
 <html>
     <head>
@@ -13,8 +14,7 @@
 
         <meta charset="UFT-8" />
         <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet" />
-        <meta content="width=device-width" name="viewport" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet" /> <meta content="width=device-width" name="viewport" />
 
 				<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     </head>
@@ -46,9 +46,9 @@
                     </i>
                 </a>
 								<a href="{{ .Site.BaseURL }}posts/" id="blog">
-										posts
-										<i class="fas fa-typewriter">
+										<i class="typewriter">
 										</i>
+										<!--img src="{{ .Site.BaseURL }}extras/typewriter.png"-->
 								</a>
                 <a href="{{ .Site.BaseURL}}extras/resume.pdf" id="resume">
                     <i class="far fa-file-alt">

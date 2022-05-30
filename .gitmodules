@@ -1,3 +1,9 @@
 [submodule "themes/FixIt"]
 	path = themes/FixIt
 	url = https://github.com/Lruihao/FixIt.git
+[submodule "themes/themes/hugo-notice"]
+	path = themes/themes/hugo-notice
+	url = https://github.com/martignoni/hugo-notice.git
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod

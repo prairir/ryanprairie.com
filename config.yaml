@@ -1,0 +1,108 @@
+baseURL: "http://ryanprairie.com"
+title: Ryan Prairie
+paginate: 5
+theme: ["hugo-notice", "PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Ryan Prairie
+  description: "Ryan Prairie"
+  keywords: [Blog, Portfolio, RyanPrairie, Prairie]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["/extras/headshot.jpg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Ryan Prairie"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/prairir/ryanprairie.com/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 1
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 2
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 3
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 4
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 5
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # allowing raw html in markdown
+      # MAKE SURE YOU DONT ENABLE COMMENTS
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
