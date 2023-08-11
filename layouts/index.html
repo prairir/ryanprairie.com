@@ -2,13 +2,15 @@
 {{ $template := resources.Get "sass/style.scss" }}
 {{ $style := $template | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS | resources.Fingerprint }}
 {{ "<!-- ENTERING index.html -->" | safeHTML }}
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>{{ .Title }}</title>
         <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="{{ .Site.BaseURL }}js/app.js"></script>
 
         <meta property="og:site_name" content="Ryan Prairies Website">
+        <meta name="description" property="og:description" content="Its my website">
         <meta property="og:image" content="{{ .Site.BaseURL }}extras/headshot.jpg">
         <meta property="og:type" content="website">
 
@@ -33,25 +35,25 @@
                 <p>Occasionally, I use computers</p>
             </div>
             <div id="stuff">
-                <a href="https://github.com/prairir" id="github">
-                    <i class="fab fa-github-square">
+                <a href="https://github.com/prairir" id="github" title="link to my github">
+                    <i class="fab fa-github-square" title="github icon">
                     </i>
                 </a>
-                <a href="https://linkedin.com/in/ryanprairie" id="linkedin">
-                    <i class="fab fa-linkedin">
+                <a href="https://linkedin.com/in/ryanprairie" id="linkedin" title="link to my linkedin">
+                    <i class="fab fa-linkedin" title="linkedin icon">
                     </i>
                 </a>
-                <a href="mailto:prairie421@gmail.com" id="email">
-                    <i class="fas fa-envelope">
+                <a href="mailto:prairie421@gmail.com" id="email" title="link to my email">
+                    <i class="fas fa-envelope" title="email icon">
                     </i>
                 </a>
-								<a href="{{ .Site.BaseURL }}posts/" id="blog">
-										<i class="typewriter">
+								<a href="{{ .Site.BaseURL }}posts/" id="blog" title="link to my blog">
+										<i class="typewriter" title="blog icon">
 										</i>
 										<!--img src="{{ .Site.BaseURL }}extras/typewriter.png"-->
 								</a>
-                <a href="{{ .Site.BaseURL}}extras/resume.pdf" id="resume">
-                    <i class="far fa-file-alt">
+                <a href="{{ .Site.BaseURL}}extras/resume.pdf" id="resume" title="link to my resume">
+                    <i class="far fa-file-alt" title="resume icon">
 										</i>
                 </a>
             </div>
